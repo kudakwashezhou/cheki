@@ -1,14 +1,9 @@
 package sample;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import java.util.Iterator;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 public class SelectCountry {
     public static WebDriver driver = null;
@@ -23,6 +18,11 @@ public class SelectCountry {
         driver.manage().timeouts().pageLoadTimeout(40L, TimeUnit.SECONDS);
     }
     @Test
+    public void cheki(){
+        this.InvokeDriver();
+        driver.get("https://www.cheki.com/");
+    }
+   /* @Test
     public void testCountries() {
         this.InvokeDriver();
         driver.get("https://www.cheki.com/");
@@ -48,6 +48,6 @@ public class SelectCountry {
             System.out.println(driver.getTitle());
         }
 
-    }
+    }*/
 
 }
