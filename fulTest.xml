@@ -3,9 +3,9 @@
     <test name="test">
         <classes>
             <class name="sample.SelectCountry"/>
-            <class name="sample.Registration"/>
+           <!-- <class name="sample.Registration"/>
             <class name="sample.NavigationBar"/>
-            <class name="sample.CarLoans"/>
+            <class name="sample.CarLoans"/> -->
         </classes>
     </test>
 </suite>
