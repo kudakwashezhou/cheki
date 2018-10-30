@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mymaven" >
+    <test name="test">
+        <classes>
+            <class name="sample.SelectCountry"/>
+            <class name="sample.Registration"/>
+            <class name="sample.NavigationBar"/>
+            <class name="sample.CarLoans"/>
+        </classes>
+    </test>
+</suite>
