@@ -10,7 +10,6 @@ import java.awt.*;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 public class CarLoans {
     public static WebDriver driver = null;
 
@@ -185,4 +184,5 @@ public class CarLoans {
         }
 
     }
+
 }

@@ -22,7 +22,7 @@ public class SelectCountry {
         driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(40L, TimeUnit.SECONDS);
     }
-@Test
+    @Test
     public void testCountries() {
         this.InvokeDriver();
         driver.get("https://www.cheki.com/");
@@ -49,4 +49,5 @@ public class SelectCountry {
         }
 
     }
+
 }

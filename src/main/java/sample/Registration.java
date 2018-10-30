@@ -54,4 +54,5 @@ public class Registration {
         driver.findElement(By.cssSelector("input[name=\"password\"]")).sendKeys(new CharSequence[]{"testtest"});
         driver.findElement(By.xpath("//input[@value='Register']")).click();
     }
+
 }

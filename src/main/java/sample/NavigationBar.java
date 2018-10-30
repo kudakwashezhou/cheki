@@ -77,5 +77,6 @@ public class NavigationBar {
             System.out.println(driver.getTitle());
         }
 
+
     }
 }
