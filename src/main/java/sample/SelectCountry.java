@@ -23,7 +23,7 @@ public class SelectCountry {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         //System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
@@ -37,8 +37,6 @@ public class SelectCountry {
     }
     @Test
     public void testCountries() {
-        this.InvokeDriver();
-        //driver.get("https://www.cheki.com/");
         WebElement countries = driver.findElement(By.xpath("//div[@class='main']"));
         int mydriver = countries.findElements(By.tagName("a")).size();
 
@@ -47,7 +45,7 @@ public class SelectCountry {
             ((WebElement)countries.findElements(By.tagName("a")).get(i)).sendKeys(new CharSequence[]{clickonlinkTab});
 
             try {
-                Thread.sleep(5000L);
+                Thread.sleep(7500L);
             } catch (InterruptedException var6) {
                 var6.printStackTrace();
             }
@@ -58,7 +56,7 @@ public class SelectCountry {
 
         while(it.hasNext()) {
             driver.switchTo().window((String)it.next());
-            System.out.println(driver.getTitle());
+           // System.out.println(driver.getTitle());
         }
 
     }
