@@ -12,6 +12,7 @@ public class SelectCountry {
 
     public void InvokeDriver() {
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
