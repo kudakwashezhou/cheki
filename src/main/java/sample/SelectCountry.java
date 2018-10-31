@@ -1,10 +1,15 @@
 package sample;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class SelectCountry {
@@ -30,10 +35,10 @@ public class SelectCountry {
         this.InvokeDriver();
         driver.get("https://www.cheki.com/");
     }
-   /* @Test
+    @Test
     public void testCountries() {
         this.InvokeDriver();
-        driver.get("https://www.cheki.com/");
+        //driver.get("https://www.cheki.com/");
         WebElement countries = driver.findElement(By.xpath("//div[@class='main']"));
         int mydriver = countries.findElements(By.tagName("a")).size();
 
@@ -56,6 +61,6 @@ public class SelectCountry {
             System.out.println(driver.getTitle());
         }
 
-    }*/
+    }
 
 }
