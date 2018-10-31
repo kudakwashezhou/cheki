@@ -23,7 +23,7 @@ public class SelectCountry {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         //System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
