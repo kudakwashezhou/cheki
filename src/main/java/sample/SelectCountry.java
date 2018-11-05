@@ -31,7 +31,7 @@ public class SelectCountry {
 
     }
     @Test
-    public void cheki(){
+    public void clickChekiUrl(){
         this.InvokeDriver();
         driver.get("https://www.cheki.com/");
     }
