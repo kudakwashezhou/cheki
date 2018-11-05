@@ -22,7 +22,7 @@ public class CarLoans {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         //System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);

@@ -26,6 +26,8 @@ hs_err_pid*
 .idea
 *.fxml
 adminController.java
+logDetails.java
+logController.java
 Automation.iml
 DbConnect.java
 developerController.java
@@ -40,4 +42,5 @@ testerProfileController.java
 userDetails.java
 developerProfileController.java
 testerController.java
+
 
