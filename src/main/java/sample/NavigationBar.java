@@ -63,6 +63,9 @@ public class NavigationBar {
             priority = 2
     )
     public void testTopLinks() {
+        this.InvokeDriver();
+        driver.get("https://www.cheki.co.ke/");
+
         WebElement links = driver.findElement(By.cssSelector("nav.top-bar"));
         int mydriver = links.findElements(By.tagName("a")).size();
 
