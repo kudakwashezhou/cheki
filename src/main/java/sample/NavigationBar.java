@@ -25,10 +25,10 @@ public class NavigationBar {
         options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kuda Zhou\\IdeaProjects\\chromedriver.exe");
         //System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
@@ -81,8 +81,14 @@ public class NavigationBar {
         Iterator it = abc.iterator();
 
         while(it.hasNext()) {
+            try {
+                Thread.sleep(5000L);
+            } catch (InterruptedException var6) {
+                var6.printStackTrace();
+            }
+
             driver.switchTo().window((String)it.next());
-            System.out.println(driver.getTitle());
+            // System.out.println(driver.getTitle());
         }
 
 

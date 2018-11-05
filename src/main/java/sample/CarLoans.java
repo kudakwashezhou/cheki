@@ -19,10 +19,10 @@ public class CarLoans {
         options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kuda Zhou\\IdeaProjects\\chromedriver.exe");
         //System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
@@ -188,7 +188,7 @@ public class CarLoans {
             }
 
             driver.switchTo().window((String)it.next());
-            System.out.println(driver.getTitle());
+           // System.out.println(driver.getTitle());
         }
 
     }
